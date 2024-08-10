@@ -1,0 +1,7 @@
+../Core/Src/LCD.c:7:6:LCD_Send_Command	1
+../Core/Src/LCD.c:35:6:LCD_Init	1
+../Core/Src/LCD.c:44:6:LCD_Char	1
+../Core/Src/LCD.c:69:6:LCD_Char_xy	5
+../Core/Src/LCD.c:96:6:LCD_String	2
+../Core/Src/LCD.c:103:6:LCD_String_xy	5
+../Core/Src/LCD.c:130:6:LCD_Clear	1
