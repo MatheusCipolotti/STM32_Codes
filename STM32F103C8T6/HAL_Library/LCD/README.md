@@ -9,6 +9,7 @@ Repository dedicated to storing and testing the library for operations on a 16X2
 <img width="100%" src="https://github.com/user-attachments/assets/018c4345-35f8-4a6d-9b5b-0ffb890c805b">
 </p>
 <p align="center" width="100%">
-  Figura 1 - Microcontrolador STM32F103C8T6
+  Figura 1 - STM32F103C8T6 Microcontroller
 </p>
 
+![image](https://github.com/user-attachments/assets/b9d2352d-241d-45df-a17e-9744555c543e)
