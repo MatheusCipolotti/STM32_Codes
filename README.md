@@ -1,7 +1,7 @@
 # Códigos:
 
 ## STM32F030K6T6:
-- [Blink](STM32F030K6T6/Blink)
+- [Saída_Digital](STM32F030K6T6/Saída_Digital)
 - [Entrada Digital](STM32F030K6T6/Entrada_Digital)
 - [Entrada Analógica]()
 
