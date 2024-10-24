@@ -1,7 +1,7 @@
 # Códigos:
 
 ## STM32F030K6T6:
-- [Saída Digital](STM32F030K6T6/Saída_Digital)
+- [Saída Digital](STM32F030K6T6/Saída_Digital) - Exemplo com a configuração do delay_ms pelo systick
 - [Entrada Digital](STM32F030K6T6/Entrada_Digital)
 - [Entrada Analógica]()
 
