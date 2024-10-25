@@ -8,7 +8,7 @@ void OscInit(void){
 
 	//Seleciona o HSE como o clock do sistema
 	RCC->CFGR |= RCC_CFGR_SW_HSE;
-	while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_HSE); 	//Espera até o HSE ser selecionado
+	while ((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_HSE); 			//Espera até o HSE ser selecionado
 }
 
 void GPIO(void){
