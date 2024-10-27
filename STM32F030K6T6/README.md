@@ -31,3 +31,6 @@ Geralmente ao se criar novos projetos na STM32CubeIDE, após a compilação do p
 <p align="center">
 <img src="https://github.com/user-attachments/assets/65e33430-1366-4163-864f-19a7563e56b8">
 </p>
+
+## JTAG
+
