@@ -4,7 +4,7 @@
 void ADC_Init(void){
 	//Configura o CKMODE para PCLK dividido por 2 (CKMODE = 01)
 	ADC1->CFGR2 &= ~ADC_CFGR2_CKMODE;      						//Limpa CKMODE
-	ADC1->CFGR2 |= (1 << ADC_CFGR2_CKMODE_Pos); 				//Define CKMODE = 01 (PCLK/2)
+	ADC1->CFGR2 |= (1 << ADC_CFGR2_CKMODE_Pos); 					//Define CKMODE = 01 (PCLK/2)
 
 	//Habilita o clock para GPIOA
 	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
@@ -17,7 +17,7 @@ void ADC_Init(void){
 
 	//Configura o tempo de amostragem para 28,5 ciclos de clock
 	ADC1->SMPR &= ~ADC_SMPR_SMP;   							//Limpa o campo SMP1
-	ADC1->SMPR |= (3 << ADC_SMPR_SMP_Pos); 					//Define SMP1 = 011 (28,5 ciclos)
+	ADC1->SMPR |= (3 << ADC_SMPR_SMP_Pos); 						//Define SMP1 = 011 (28,5 ciclos)
 
 	//Verifica se o ADC está desativado antes da calibração
 	if (!(ADC1->CR & ADC_CR_ADEN)){
