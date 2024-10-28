@@ -40,3 +40,18 @@ O tempo de amostragem programável permite ajustar a velocidade de conversão co
 </p>
 
 ## ADC_CR_ADCAL
+O ADC possui uma função de calibração. Durante essa fase, ele calcula um fator de calibração que é aplicado internamente até o próximo desligamento do ADC. A aplicação não deve usar o ADC durante a calibração e precisa aguardar sua conclusão.
+
+A calibração deve ser realizada antes de iniciar a conversão A/D, pois elimina o erro de offset, que pode variar entre chips devido a diferenças de fabricação. A calibração é iniciada pelo software ao definir o bit ADCAL como 1, e só pode ser feita quando o ADC está desativado (ADEN = 0). O bit ADCAL permanece em 1 durante toda a sequência de calibração e é limpo automaticamente quando a calibração é concluída. Após isso, o fator de calibração pode ser lido no registro ADC_DR (bits 6 a 0).
+
+A calibração interna é mantida enquanto o ADC estiver desativado (ADEN = 0). Quando as condições de operação mudam (como variações de VDDA ou temperatura), recomenda-se realizar nova calibração. O fator de calibração é perdido sempre que a alimentação do ADC é removida, como ao entrar em modo de espera.
+
+Procedimento de calibração via software:
+
+1 - Assegure que ADEN = 0 e DMAEN = 0.
+
+2 - Defina ADCAL = 1.
+
+3 - Aguarde até que ADCAL = 0.
+
+4 - O fator de calibração pode ser lido nos bits 6:0 do registro ADC_DR.
