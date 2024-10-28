@@ -28,3 +28,15 @@ A imagem abaixo mostra a organização do registrador:
 </p>
 
 ## ADC_SMPR_SMP
+Antes de iniciar uma conversão, o ADC precisa estabelecer uma conexão direta entre a fonte de tensão a ser medida e o capacitor de amostragem embutido. O tempo de amostragem deve ser suficiente para que a fonte de tensão carregue o capacitor de acordo com o nível de tensão de entrada.
+
+O tempo de amostragem programável permite ajustar a velocidade de conversão conforme a resistência de entrada da fonte de tensão. O ADC amostra a tensão de entrada por um número de ciclos de clock que pode ser ajustado pelos bits SMP[2:0] no registro ADC_SMPR, e esse tempo de amostragem é comum a todos os canais. Caso necessário, o software pode ajustar o tempo de amostragem entre conversões.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/774429e2-68fa-4dc7-9e75-11bcc36b64b0">
+</p>
+<p align="center" width="100%">
+  Figura 3 - Registrador de tempo de amostragem do ADC (ADC_SMPR)
+</p>
+
+## ADC_CR_ADCAL
