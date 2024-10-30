@@ -6,6 +6,7 @@
 - [Entrada Analógica](STM32F030K6T6/Entrada_Analógica)
 - [#1 PWM](STM32F030K6T6/1_PWM) - Exemplo utilizando o PWM do canal CH1 do TIM1
 - [#2 PWM]() - Exemplo utilizando o PWM dos canais CH1 e o CH1N do TIM1
+- [#3 PWM]() - Exemplo utilizando o PWM dos canais CH1, CH1N, CH2, CH2N, CH3 e o CH3N do TIM1
 
 ## STM32F103C8T6:
 - [LCD](STM32F103C8T6/HAL_Library/LCD)
