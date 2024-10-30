@@ -1,0 +1,2 @@
+../Src/configs.c:4:6:OscInit	8	static
+../Src/configs.c:14:6:GPIO	8	static
