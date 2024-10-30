@@ -1,5 +1,5 @@
 # Orientações
-Esse repositório coletou informações do Datasheet e o Reference Manual do STM32F030x4, STM32F030x6, STM32F030x8 e STM32F030xC disponibilizados pela STMicroeletronics, os dois arquivos também estão disponíveis nessa página.
+Esse repositório coletou informações do Datasheet e do Reference Manual do STM32F030x4, STM32F030x6, STM32F030x8 e STM32F030xC disponibilizados pela STMicroeletronics, os dois arquivos também estão disponíveis nessa página.
 
 ## CMSIS
 Todos os código e projetos descritos acima, utilizam os arquivos da pasta CMSIS, que devem ser vinculados ao projeto conforme a sequência abaixo: 
