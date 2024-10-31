@@ -6,10 +6,10 @@ void PWM_TIM1_Config(void){
 	RCC->APB2ENR |= RCC_APB2ENR_TIM1EN;
 
 	//Configura prescaler para definir a frequência do temporizador
-	TIM1->PSC = 7999; 									//Prescaler para dividir o clock
+	TIM1->PSC = 7; 										//Prescaler para dividir o clock
 
 	//Configura o ARR (Auto-Reload Register) para definir a frequência do PWM
-	TIM1->ARR = 1000; 									//Define o período (PWM de 1kHz por exemplo)
+	TIM1->ARR = 999; 									//Define o período (PWM de 1kHz por exemplo)
 
 	//Configura o CH1 em modo PWM1
 	TIM1->CCMR1 &= ~(TIM_CCMR1_OC1M_Msk); // Limpar bits OC1M
