@@ -6,10 +6,10 @@ void PWM_TIM1_Config(void){
 	RCC->APB2ENR |= RCC_APB2ENR_TIM1EN;
 
 	//Configura prescaler para definir a frequência do temporizador
-	TIM1->PSC = 7; 														//Prescaler para dividir o clock
+	TIM1->PSC = 7; 												//Prescaler para dividir o clock
 
 	//Configura o ARR (Auto-Reload Register) para definir a frequência do PWM
-	TIM1->ARR = 999; 													//Define o período (PWM de 1kHz por exemplo)
+	TIM1->ARR = 999; 											//Define o período (PWM de 1kHz por exemplo)
 
 	//Configura cada canal para modo PWM1
 	//Canal 1
@@ -33,9 +33,9 @@ void PWM_TIM1_Config(void){
 	TIM1->CCER |= TIM_CCER_CC3NE;										//Habilita CH3N
 
 	//Configura valor de comparação (duty cycle)
-	TIM1->CCR1 = 500; 													//Duty cycle 50% para CH1
-	TIM1->CCR2 = 500; 													//Duty cycle 50% para CH2
-	TIM1->CCR3 = 500; 													//Duty cycle 50% para CH3
+	TIM1->CCR1 = 500; 											//Duty cycle 50% para CH1
+	TIM1->CCR2 = 500; 											//Duty cycle 50% para CH2
+	TIM1->CCR3 = 500; 											//Duty cycle 50% para CH3
 
 	//Ativa o contador e a saída principal
 	TIM1->BDTR |= TIM_BDTR_MOE;    										//Ativa as saídas principais
