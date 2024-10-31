@@ -1,7 +1,13 @@
 # Instruções
 
 ## Pinout
-Conector J3:
+Conector J2 - Pinos de programação:
+- 1 - 3V3;
+- 2 - SWDIO;
+- 3 - SWCLK;
+- 4 - GND;
+
+Conector J3 - Pinos de Interface:
 - 1 - VDC (tensão de entrada pelo JACK DC);
 - 2 - 3V3;
 - 3 - GND;
@@ -44,3 +50,7 @@ Conector J3:
 - JP8 - BOOT0 em nível lógico 0;
 
 *Obs.: Lista considerando os efeitos descritos quando o jumper estiver soldado ou conectado.
+
+## Test Points
+- TP1 - GND;
+- TP2 - 3V3;
