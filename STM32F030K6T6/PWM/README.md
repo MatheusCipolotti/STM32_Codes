@@ -63,6 +63,7 @@ A frequência do PWM é determinada por 3 fatores, frequência do clock do micro
   Figura 6 - Fórmula para definição da frequência do PWM
 </p>
 No exemplo desse diretório, consideramos os valores abaixo:
+
 - Frequência do clock = 8MHz;
 - ARR = 999;
 - PSC = 7;
