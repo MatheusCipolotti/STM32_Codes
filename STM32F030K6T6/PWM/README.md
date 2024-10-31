@@ -54,7 +54,11 @@ No STM32, cada pino pode ter múltiplas funções alternativas, que são configu
 
 # PWM
 
-## Frequência do PWM - ARR e PSC
+## ARR
+
+## PSC
+
+## Frequência do PWM
 A frequência do PWM é determinada por 3 fatores, frequência do clock do microcontrolador, valor do registrador ARR (Auto Reload Register) e o PSC (prescaler), conforme a *Figura 6*:
 <p align="center">
 <img  src="https://github.com/user-attachments/assets/4f15b572-46d6-4336-a8ea-1f1291a81ab9">
