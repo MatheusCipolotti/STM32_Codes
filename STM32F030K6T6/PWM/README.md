@@ -55,8 +55,22 @@ No STM32, cada pino pode ter múltiplas funções alternativas, que são configu
 # PWM
 
 ## PSC
+O registrador PSC (Prescaler), *Figura 7*, é usado para dividir a frequência de entrada do timer, permitindo controlar a velocidade com que o timer conta os pulsos de clock, o valor máximo do PSC é de 16 bits, variando de 0 a 65535. Isso significa que o prescaler pode dividir o clock de entrada do timer em até 65536 (65535 + 1) vezes.
+<p align="center">
+<img  src="https://github.com/user-attachments/assets/a0ce624f-b888-4c8a-b7ce-b10c7f83c354">
+</p>
+<p align="center">
+  Figura 7 - Registrador PSC
+</p>
 
 ## ARR
+O registrador ARR (Auto-Reload Register) define o valor máximo até o qual o contador do timer incrementa antes de ser reiniciado, ou seja, é o registrador que controla o período do timer, o valor máximo do ARR é de 16 bits, variando de 0 a 65535.
+<p align="center">
+<img  src="https://github.com/user-attachments/assets/8f65b481-46db-4a77-bbf5-1aac15c1efe8">
+</p>
+<p align="center">
+  Figura 7 - Registrador PSC
+</p>
 
 ## CCMRX
 
