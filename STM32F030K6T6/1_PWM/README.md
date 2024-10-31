@@ -5,7 +5,7 @@ Nesse exemplo, os arquivos PWM.c e configs.c, na função GPIO, possuem as confi
 A configuração do GPIO para essa aplicação, necessita dos seguintes passos:
 - 1º - Habilitação do clock no GPIO com a função que será utilizada, nesse caso GPIOA;
 - 2º - Definir o pino com a função alternativa, utilizando o registrador MODER;
-- 3º - Definir qual das funções alternativas o GPIO possuirá;
+- 3º - Definir qual das funções alternativas o GPIO possuirá, utilizando o registrador AFR;
 
 ## MODER
 <p align="center">
