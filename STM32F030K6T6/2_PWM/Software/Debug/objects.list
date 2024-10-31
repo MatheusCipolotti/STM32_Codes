@@ -1,7 +1,0 @@
-"./Src/PWM.o"
-"./Src/configs.o"
-"./Src/delay.o"
-"./Src/main.o"
-"./Src/syscalls.o"
-"./Src/sysmem.o"
-"./Startup/startup_stm32f030k6tx.o"
