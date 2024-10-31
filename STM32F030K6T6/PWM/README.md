@@ -64,12 +64,12 @@ O registrador PSC (Prescaler), *Figura 7*, é usado para dividir a frequência d
 </p>
 
 ## ARR
-O registrador ARR (Auto-Reload Register) define o valor máximo até o qual o contador do timer incrementa antes de ser reiniciado, ou seja, é o registrador que controla o período do timer, o valor máximo do ARR é de 16 bits, variando de 0 a 65535.
+O registrador ARR (Auto-Reload Register), *Figura 8*, define o valor máximo até o qual o contador do timer incrementa antes de ser reiniciado, ou seja, é o registrador que controla o período do timer, o valor máximo do ARR é de 16 bits, variando de 0 a 65535.
 <p align="center">
 <img  src="https://github.com/user-attachments/assets/8f65b481-46db-4a77-bbf5-1aac15c1efe8">
 </p>
 <p align="center">
-  Figura 7 - Registrador PSC
+  Figura 8 - Registrador PSC
 </p>
 
 ## CCMRX
@@ -79,12 +79,12 @@ O registrador ARR (Auto-Reload Register) define o valor máximo até o qual o co
 ## CCRX
 
 ## Frequência do PWM
-A frequência do PWM é determinada por 3 fatores, frequência do clock do microcontrolador, valor do registrador ARR (Auto Reload Register) e o PSC (prescaler), conforme a *Figura 6*:
+A frequência do PWM é determinada por 3 fatores, frequência do clock do microcontrolador, valor do registrador ARR (Auto Reload Register) e o PSC (prescaler), conforme a *Figura 9*:
 <p align="center">
 <img  src="https://github.com/user-attachments/assets/4f15b572-46d6-4336-a8ea-1f1291a81ab9">
 </p>
 <p align="center">
-  Figura 6 - Fórmula para definição da frequência do PWM
+  Figura 9 - Fórmula para definição da frequência do PWM
 </p>
 No exemplo desse diretório, consideramos os valores abaixo:
 
