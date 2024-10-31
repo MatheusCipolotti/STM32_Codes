@@ -54,3 +54,9 @@ Conector J3 - Pinos de Interface:
 ## Test Points
 - TP1 - GND;
 - TP2 - 3V3;
+
+## LEDs de Indicação
+- D6 - 3V3;
+- D7 - BOARDLED (PB0);
+- D8 - RS232 RX (PA3);
+- D9 - RS232 TX (PA2);
