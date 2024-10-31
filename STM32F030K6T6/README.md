@@ -34,4 +34,9 @@ Geralmente ao se criar novos projetos na STM32CubeIDE, após a compilação do p
 </p>
 
 ## JTAG
+Configuração utilizada:
+<p align="center">
+<img src="https://github.com/user-attachments/assets/540a04bc-e333-4738-bb75-c0e772492655">
+</p>
+
 
