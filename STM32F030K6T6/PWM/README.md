@@ -17,12 +17,12 @@ A configuração do GPIO para essa aplicação, necessita dos seguintes passos:
 
 ## AFR 
 No STM32, cada pino pode ter múltiplas funções alternativas, que são configuradas através dos registros de função alternativa (AFR). Cada porta GPIO tem dois registros de função alternativa: AFR[0] para os pinos de 0 a 7 (*Figura 2*) e AFR[1] para os pinos de 8 a 15 (*Figura 3*). Conforme a *Figura 4* e a *Figura 5*, a função alternativa AF2 é atribuída da seguinte maneira:
+- PA7 - TIM1_CH1N;
 - PA8 - TIM1_CH1;
 - PA9 - TIM1_CH2;
 - PA10 - TIM1_CH3;
-- PB13 - TIM1_CH1N;
-- PB14 - TIM1_CH2N;
-- PB15 - TIM1_CH3N;
+- PB0 - TIM1_CH2N;
+- PB1 - TIM1_CH3N;
 
 <p align="center">
 <img  src="https://github.com/user-attachments/assets/1c7efc87-0225-4efa-b17d-dbeadbb576b9">
@@ -46,7 +46,7 @@ No STM32, cada pino pode ter múltiplas funções alternativas, que são configu
 </p>
 
 <p align="center">
-<img  src="https://github.com/user-attachments/assets/56d4e1e2-2c34-41ac-888d-59b3a05096e6">
+<img  src="https://github.com/user-attachments/assets/bcc52b1e-62a5-4dd0-8ec6-0df0b738a5b6">
 </p>
 <p align="center">
   Figura 5 - 2ª Tabela de funções alternativas
@@ -92,4 +92,10 @@ No exemplo desse diretório, consideramos os valores abaixo:
 - ARR = 999;
 - PSC = 7;
 
-Esses valores geram uma frequência de 1KHz.
+Esses valores geram uma frequência de 1KHz, a *Figura 10* mostra o sinal adiquirido pelo osciloscópio.
+<p align="center">
+<img  src="https://github.com/user-attachments/assets/a30ff8e0-c313-4a95-92e6-ecefb4dd628b">
+</p>
+<p align="center">
+  Figura 10 - Canais CH1 e CH1N
+</p>
