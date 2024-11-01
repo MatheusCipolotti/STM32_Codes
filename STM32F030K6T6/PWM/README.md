@@ -53,6 +53,7 @@ No STM32, cada pino pode ter múltiplas funções alternativas, que são configu
 </p>
 
 # PWM
+O PWM (Pulse Width Modulation) no STM32F030 é gerado por temporizadores (TIMs) como o TIM1, que suporta PWM com canais complementares e dead time, ideal para controle de motores, LEDs e conversores de potência. No STM32F030, o PWM é gerado pelos temporizadores ao alternar o nível lógico do pino de saída com base nos registradores ARR (Auto-Reload Register) e CCR (Capture/Compare Register).
 
 ## PSC
 O registrador PSC (Prescaler), *Figura 7*, é usado para dividir a frequência de entrada do timer, permitindo controlar a velocidade com que o timer conta os pulsos de clock, o valor máximo do PSC é de 16 bits, variando de 0 a 65535. Isso significa que o prescaler pode dividir o clock de entrada do timer em até 65536 (65535 + 1) vezes.
@@ -77,6 +78,7 @@ O registrador ARR (Auto-Reload Register), *Figura 8*, define o valor máximo at�
 ## CCER
 
 ## CCRX
+Define o valor no qual a saída muda de estado, controlando o duty cycle.
 
 ## Frequência do PWM
 A frequência do PWM é determinada por 3 fatores, frequência do clock do microcontrolador, valor do registrador ARR (Auto Reload Register) e o PSC (prescaler), conforme a *Figura 9*:
