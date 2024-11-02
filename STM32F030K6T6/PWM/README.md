@@ -101,3 +101,20 @@ Esses valores geram uma frequência de 1KHz, a *Figura 10* mostra o sinal adiqui
 <p align="center">
   Figura 10 - Canais CH1 e CH1N
 </p>
+
+## Inversão do sinal complementar
+Para inverter os sinais nos canais complementares CH1N, CH2N e CH3N do TIM1, basta configurar os bits CC1NP, CC2NP e CC3NP no registrador CCER, esses bits controlam a polaridade dos canais complementares e permitem inverter o sinal.
+
+~~~C
+    // Habilitar saída complementar e polaridade invertida
+    TIM1->CCER |= TIM_CCER_CC1E | TIM_CCER_CC1NE | TIM_CCER_CC1NP;  // CH1 e CH1N invertido
+    TIM1->CCER |= TIM_CCER_CC2E | TIM_CCER_CC2NE | TIM_CCER_CC2NP;  // CH2 e CH2N invertido
+    TIM1->CCER |= TIM_CCER_CC3E | TIM_CCER_CC3NE | TIM_CCER_CC3NP;  // CH3 e CH3N invertido
+~~~
+
+<p align="center">
+<img  src="https://github.com/user-attachments/assets/2de45b79-b51a-41e1-9e8a-637fe8d2b39c">
+</p>
+<p align="center">
+  Figura 11 - Canais CH1 e CH1N invertido
+</p>
