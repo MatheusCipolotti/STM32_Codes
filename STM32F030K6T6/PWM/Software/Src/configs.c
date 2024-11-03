@@ -43,7 +43,7 @@ void GPIO(void){
 	GPIOB->MODER |= (GPIO_MODER_MODER0_1); 						//PB0 em modo função alternativa
 	GPIOB->AFR[0] |= (0x02 << GPIO_AFRH_AFRH0_Pos); 				//AF2 para PB0
 
-	//Configura o PB1 como saida alternativa para o TIM1_CH2N (AF2)
+	//Configura o PB1 como saida alternativa para o TIM1_CH3N (AF2)
 	GPIOB->MODER &= ~(GPIO_MODER_MODER1);
 	GPIOB->MODER |= (GPIO_MODER_MODER1_1); 						//PB1 em modo função alternativa
 	GPIOB->AFR[0] |= (0x02 << GPIO_AFRH_AFRH1_Pos); 				//AF2 para PB1	
