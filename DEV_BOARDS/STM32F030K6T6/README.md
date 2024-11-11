@@ -8,36 +8,39 @@ Conector J2 - Pinos de programação:
 - 4 - GND;
 
 Conector J3 - Pinos de Interface:
-- 1 - VDC (tensão de entrada pelo JACK DC);
-- 2 - 3V3;
-- 3 - GND;
-- 4 - GND;
-- 5 - PA13;
-- 6 - PA14;
-- 7 - PA11;
-- 8 - PA12;
-- 9 - PA9;
-- 10 - PA10;
-- 11 - PB1;
-- 12 - PA8;
-- 13 - PA7;
-- 14 - PB0;
-- 15 - PA5;
-- 16 - PA6;
-- 17 - PA3;
-- 18 - PA4;
-- 19 - PA1;
-- 20 - PA2;
-- 21 - PB7;
-- 22 - PA0;
-- 23 - PB5;
-- 24 - PB6;
-- 25 - PB3;
-- 26 - PB4;
-- 27 - RESET;
-- 28 - PA15;
-- 29 - OSC_IN;
-- 30 - OSC_OUT;
+
+| Pino | Nome    | Funções                                                              |
+| ---- | ------- | -------------------------------------------------------------------- |
+| 1    | VDC     |                                                                      |
+| 2    | 3V3     |                                                                      |
+| 3    | GND     |                                                                      |
+| 4    | GND     |                                                                      |
+| 5    | PA13    | IR_OUT - SWDIO                                                       |
+| 6    | PA14    | USART1_TX - USART2_TX - SWCLK                                        |
+| 7    | PA11    | USART1_CTS - TIM1_CH4 - EVENTOUT - I2C2_SCL                          |
+| 8    | PA12    | USART1_RTS - TIM1_ETR - EVENTOUT - I2C2_SDA                          |
+| 9    | PA9     | USART1_TX - TIM1_CH2 - TIM15_BKIN - I2C1_SCL                         |
+| 10   | PA10    | USART1_RX - TIM1_CH3 - TIM17_BKIN - I2C1_SCA                         |
+| 11   | PB1     | TIM3_CH4 - TIM14_CH1 - TIM1_CH3N - USART3_RTS                        |
+| 12   | PA8     | USART1_CK - TIM1_CH1 - EVENTOUT - MCO                                |
+| 13   | PA7     | SPI1_MISO - TIM3_CH1 - TIM1_BKIN - TIM16_CH1 - EVENTOUT - USART3_CTS |
+| 14   | PB0     | TIM3_CH3 - TIM1_CH2N - EVENTOUT - USART3_CK                          |
+| 15   | PA5     | SPI1_SCK - USART6_RX                                                 |
+| 16   | PA6     | SPI1_MISO - TIM3_CH1 - TIM1_BKIN - TIM16_CH1 - EVENTOUT - USART3_CTS |
+| 17   | PA3     | USART1_RX - USART2_RX - TIM15_CH2                                    |
+| 18   | PA4     | SPI1_NSS - USART1_CK - USART2_CK - TIM14_CH1 - USART6_TX             |
+| 19   | PA1     | USART1_RTS - USART2_RTS - EVENTOUT - USART4_RX                       |
+| 20   | PA2     | USART1_TX - USART2_TX - TIM15_CH1                                    |
+| 21   | PB7     | I2C1_SCL - USART1_TX - TIM16_CH1N                                    |
+| 22   | PA0     | USART1_CTS - USART2_CTS - USART4_TX                                  |
+| 23   | PB5     | SPI1_MOSI - I2C1_SMBA - TIM16_BKIN - TIM3_CH2 - USART5_CK_RTS        |
+| 24   | PB6     | I2C1_SCL - USART1_TX - TIM16_CH1N                                    |
+| 25   | PB3     | SPI1_SCK - EVENTOUT - USART5_TX                                      |
+| 26   | PB4     | SPI1_MISO - TIM3_CH1 - EVENTOUT - TIM17_BKIN - USART5_RX             |
+| 27   | RESET   |                                                                      |
+| 28   | PA15    | SPI1_NSS - USART1_RX - USART2_RX - USART4_RTS - EVENTOUT             |
+| 29   | OSC_IN  |                                                                      |
+| 30   | OSC_OUT |                                                                      |
 
 ## Jumpers
 - JP1 - Habilita o LED de indicação do 3V3;
