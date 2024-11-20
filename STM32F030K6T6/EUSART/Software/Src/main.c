@@ -5,8 +5,8 @@
 #include "configs.h"
 
 int main(){
-	OscInit();											//Configura o microcontrolador para funcionar em 8MHz
-	EUSART1_Init(9600);									//Configura a UART com BaudRate em 9600
+	OscInit();								//Configura o microcontrolador para funcionar em 8MHz
+	EUSART1_Init(9600);							//Configura a UART com BaudRate em 9600
 
 	while(1){
 		char uart_rx = EUSART1_Read();
