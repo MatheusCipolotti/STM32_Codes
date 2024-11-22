@@ -1,0 +1,6 @@
+../Src/EUSART.c:5:6:EUSART1_Init	24	static
+../Src/EUSART.c:23:6:EUSART1_Write	16	static
+../Src/EUSART.c:32:6:EUSART1_Write_ln	16	static
+../Src/EUSART.c:38:6:EUSART1_Write_Text	24	static
+../Src/EUSART.c:45:6:EUSART1_Write_Text_ln	16	static
+../Src/EUSART.c:51:6:EUSART1_Read	8	static
