@@ -23,7 +23,7 @@ Conector J3 - Pinos de Interface:
 | 10   | PA10    | USART1_RX - TIM1_CH3 - TIM17_BKIN - I2C1_SCA                         |
 | 11   | PB1     | TIM3_CH4 - TIM14_CH1 - TIM1_CH3N - USART3_RTS                        |
 | 12   | PA8     | USART1_CK - TIM1_CH1 - EVENTOUT - MCO                                |
-| 13   | PA7     | SPI1_MISO - TIM3_CH1 - TIM1_BKIN - TIM16_CH1 - EVENTOUT - USART3_CTS |
+| 13   | PA7     | SPI1_MOSI - TIM3_CH2 - TIM14_CH1 - TIM1_CH1N - TIM17_CH1 - EVENTOUT  |
 | 14   | PB0     | TIM3_CH3 - TIM1_CH2N - EVENTOUT - USART3_CK                          |
 | 15   | PA5     | SPI1_SCK - USART6_RX                                                 |
 | 16   | PA6     | SPI1_MISO - TIM3_CH1 - TIM1_BKIN - TIM16_CH1 - EVENTOUT - USART3_CTS |
