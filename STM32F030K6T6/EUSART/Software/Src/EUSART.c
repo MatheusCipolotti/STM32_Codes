@@ -8,10 +8,10 @@ void EUSART1_Init(unsigned long baudrate){
 	RCC->APB2ENR |= RCC_APB2ENR_USART1EN; 							//Clock para USART1
 
 	//Configura PA2 (TX) e PA3 (RX) como Alternate Function
-	GPIOA->MODER &= ~(GPIO_MODER_MODER2 | GPIO_MODER_MODER3); 		//Limpa os bits
-	GPIOA->MODER |= (GPIO_MODER_MODER2_1 | GPIO_MODER_MODER3_1); 	//Modo AF para PA2 e PA3
-	GPIOA->AFR[0] &= ~((0xF << (2 * 4)) | (0xF << (3 * 4)));   		//Limpa AF para PA2 e PA3
-	GPIOA->AFR[0] |= ((1 << (2 * 4)) | (1 << (3 * 4)));        		//AF1 para USART1_TX e USART1_RX
+	GPIOA->MODER &= ~(GPIO_MODER_MODER2 | GPIO_MODER_MODER3); 				//Limpa os bits
+	GPIOA->MODER |= (GPIO_MODER_MODER2_1 | GPIO_MODER_MODER3_1); 				//Modo AF para PA2 e PA3
+	GPIOA->AFR[0] &= ~((0xF << (2 * 4)) | (0xF << (3 * 4)));   				//Limpa AF para PA2 e PA3
+	GPIOA->AFR[0] |= ((1 << (2 * 4)) | (1 << (3 * 4)));        				//AF1 para USART1_TX e USART1_RX
 
 	//Configura baud rate (assume clock de 8 MHz e 9600 bps)
 	USART1->BRR = 8000000 / baudrate;
