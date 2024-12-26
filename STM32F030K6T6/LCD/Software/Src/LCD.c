@@ -7,10 +7,8 @@
 void LCD_Command(unsigned char cmd){
 	 //Envia nibble alto
 	 GPIOB->ODR = (GPIOB->ODR & ~(GPIO_ODR_0 | GPIO_ODR_1 | GPIO_ODR_3 | GPIO_ODR_7)) |
-			 (((cmd >> 4) & 0x01) << 0) |
-	         (((cmd >> 5) & 0x01) << 1) |
-	         (((cmd >> 6) & 0x01) << 7) |
-	         (((cmd >> 7) & 0x01) << 3);
+			(((cmd >> 4) & 0x01) << 0) | (((cmd >> 5) & 0x01) << 1) | 
+		 	(((cmd >> 6) & 0x01) << 7) | (((cmd >> 7) & 0x01) << 3);
 
 	 RS_LOW();
 	 E_HIGH();
@@ -20,10 +18,8 @@ void LCD_Command(unsigned char cmd){
 
 	 //Envia nibble baixo
 	 GPIOB->ODR = (GPIOB->ODR & ~(GPIO_ODR_0 | GPIO_ODR_1 | GPIO_ODR_3 | GPIO_ODR_7)) |
-			 (((cmd >> 0) & 0x01) << 0) |
-	         (((cmd >> 1) & 0x01) << 1) |
-	         (((cmd >> 2) & 0x01) << 7) |
-	         (((cmd >> 3) & 0x01) << 3);
+			(((cmd >> 0) & 0x01) << 0) | (((cmd >> 1) & 0x01) << 1) | 
+		 	(((cmd >> 2) & 0x01) << 7) | (((cmd >> 3) & 0x01) << 3);
 
 	 E_HIGH();
 	 Delay_ms(1);
@@ -43,10 +39,8 @@ void LCD_Init(void){
 void LCD_Char(char dat){
 	//Envia nibble alto
 	GPIOB->ODR = (GPIOB->ODR & ~(GPIO_ODR_0 | GPIO_ODR_1 | GPIO_ODR_3 | GPIO_ODR_7)) |
-			(((dat >> 4) & 0x01) << 0) |
-		    (((dat >> 5) & 0x01) << 1) |
-		    (((dat >> 6) & 0x01) << 7) |
-		    (((dat >> 7) & 0x01) << 3);
+			(((dat >> 4) & 0x01) << 0) | (((dat >> 5) & 0x01) << 1) | 
+			(((dat >> 6) & 0x01) << 7) | (((dat >> 7) & 0x01) << 3);
 	RS_HIGH();
 	E_HIGH();
 	Delay_ms(1);
@@ -55,10 +49,8 @@ void LCD_Char(char dat){
 
 	//Envia nibble baixo
 	GPIOB->ODR = (GPIOB->ODR & ~(GPIO_ODR_0 | GPIO_ODR_1 | GPIO_ODR_3 | GPIO_ODR_7)) |
-			(((dat >> 0) & 0x01) << 0) |
-		    (((dat >> 1) & 0x01) << 1) |
-		    (((dat >> 2) & 0x01) << 7) |
-		    (((dat >> 3) & 0x01) << 3);
+			(((dat >> 0) & 0x01) << 0) | (((dat >> 1) & 0x01) << 1) |
+			(((dat >> 2) & 0x01) << 7) | (((dat >> 3) & 0x01) << 3);
 	E_HIGH();
 	Delay_ms(1);
 	E_LOW();
@@ -69,7 +61,7 @@ void LCD_Char_xy(char row,char pos, char dat){
 	unsigned char location=0;
 
     switch (row){
-        case 0:
+	case 0:
            location=(unsigned char)((0x80) + (pos) );
            LCD_Command(location);
            break;
@@ -101,18 +93,21 @@ void LCD_String_xy(char row,char pos,const char *msg){
 
 	switch (row){
 		case 0:
-			location=(unsigned char)((0x80) + (pos));
+		location=(unsigned char)((0x80) + (pos));
 	        LCD_Command(location);
 	        break;
-	    case 1:
+		
+		case 1:
 	        location=(unsigned char)((0xC0) + (pos));
 	        LCD_Command(location);
 	        break;
-	    case 2:
+		
+	    	case 2:
 	    	location=(unsigned char)((0x94) + (pos));
 	        LCD_Command(location);
 	        break;
-	    case 3:
+		
+	    	case 3:
 	        location=(unsigned char)((0xD4) + (pos));
 	        LCD_Command(location);
 	        break;
