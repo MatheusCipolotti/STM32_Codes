@@ -9,7 +9,7 @@
 - [PWM](STM32F030K6T6/PWM) - Exemplo utilizando o PWM dos canais CH1, CH1N, CH2, CH2N, CH3 e o CH3N do TIM1
 - [UART](STM32F030K6T6/EUSART)
 - SPI
-    - Expansão de saídas com o 74HC595
+    - [Expansão de saídas com o 74HC595](STM32F030K6T6/SPI/Expansão_Saídas)
 - I2C
 - [LCD](STM32F030K6T6/LCD)
 
