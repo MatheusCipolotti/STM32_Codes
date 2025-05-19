@@ -1,0 +1,8 @@
+/media/cipolotti/MDC_2/STM/STM32F030K6T6/CMSIS/Include/core_cm0.h:623:22:__NVIC_EnableIRQ	2
+/media/cipolotti/MDC_2/STM/STM32F030K6T6/CMSIS/Include/core_cm0.h:730:22:__NVIC_SetPriority	2
+../Src/EUSART.c:6:6:EUSART1_Init	1
+../Src/EUSART.c:28:6:EUSART1_Write	2
+../Src/EUSART.c:37:6:EUSART1_Write_ln	1
+../Src/EUSART.c:43:6:EUSART1_Write_Text	2
+../Src/EUSART.c:50:6:EUSART1_Write_Text_ln	1
+../Src/EUSART.c:56:6:EUSART1_Read	2
