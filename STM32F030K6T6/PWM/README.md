@@ -1,5 +1,5 @@
 # Software
-Nesse exemplo, os arquivos PWM.c e configs.c, na função GPIO, possuem as configurações necessárias para habilitar o PWM, abaixo é explicado o funcionamento e as opções disponíveis nos registradores utilizados no arquivo.
+Nesse exemplo, os arquivos PWM.c e configs.c, possuem as configurações necessárias para habilitar o PWM, abaixo é explicado o funcionamento e as opções disponíveis nos registradores utilizados no arquivo.
 
 # GPIO
 A configuração do GPIO para essa aplicação, necessita dos seguintes passos:
