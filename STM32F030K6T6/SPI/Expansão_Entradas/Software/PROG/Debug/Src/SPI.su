@@ -1,0 +1,3 @@
+../Src/SPI.c:7:6:SPI1_Init	8	static
+../Src/SPI.c:37:6:SPI1_Write	16	static
+../Src/SPI.c:44:9:SPI1_Read	8	static

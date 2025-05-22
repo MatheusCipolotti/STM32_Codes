@@ -1,0 +1,6 @@
+/media/cipolotti/MDC_2/STM/STM32F030K6T6/CMSIS/Include/core_cm0.h:623:22:__NVIC_EnableIRQ	2
+/media/cipolotti/MDC_2/STM/STM32F030K6T6/CMSIS/Include/core_cm0.h:730:22:__NVIC_SetPriority	2
+../Src/configs.c:6:6:OscInit	3
+../Src/configs.c:16:6:GPIO_Init	1
+../Src/configs.c:57:6:TIM3_Init	1
+../Src/configs.c:75:6:EXTI_Config	1

@@ -1,0 +1,248 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "05016bfd-df52-464c-8b8d-9a207f7afd58")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 146.05 88.9) (xy 158.75 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c22797b-216b-46cf-b391-ee1732d4666a")
+	)
+	(wire
+		(pts
+			(xy 146.05 96.52) (xy 158.75 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eab309f-946c-4c9f-868c-51b355265f80")
+	)
+	(wire
+		(pts
+			(xy 146.05 86.36) (xy 158.75 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d896304-3d70-407a-8152-bcfda26bd06f")
+	)
+	(wire
+		(pts
+			(xy 146.05 91.44) (xy 158.75 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98070a69-49c8-4bfd-9265-8a37e5eb68c7")
+	)
+	(wire
+		(pts
+			(xy 146.05 93.98) (xy 158.75 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8f5b75a-c02c-4c62-ba39-99b3a0452694")
+	)
+	(sheet
+		(at 115.57 82.55)
+		(size 30.48 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "3376e70b-1485-4dd7-aab9-d0cdb0cef138")
+		(property "Sheetname" "Microcontrolador"
+			(at 115.57 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Microcontrolador.kicad_sch"
+			(at 115.57 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "HAB_SCK" input
+			(at 146.05 93.98 0)
+			(uuid "04b43b5c-883f-4c21-96dd-c75650dcc302")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "INT_GPIO" input
+			(at 146.05 96.52 0)
+			(uuid "e4e4567f-e320-4c71-95c9-41157e74d923")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MEMORIA" input
+			(at 146.05 91.44 0)
+			(uuid "6e2b9690-3606-42e6-b4e7-8ad1231b6512")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MISO" input
+			(at 146.05 86.36 0)
+			(uuid "d64f98d8-df7c-4ac3-8c7e-fdad70fefeda")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCK" input
+			(at 146.05 88.9 0)
+			(uuid "f723a17e-be43-4515-b535-3700e879fd4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Schematic"
+				(path "/05016bfd-df52-464c-8b8d-9a207f7afd58"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 82.55)
+		(size 30.48 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "fce152d1-7a32-4dd6-a526-4f12f73a142b")
+		(property "Sheetname" "Entrada_SPI"
+			(at 158.75 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Entrada_SPI.kicad_sch"
+			(at 158.75 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "HAB_SCK" input
+			(at 158.75 93.98 180)
+			(uuid "1880adaf-ee39-449b-bc7d-1c90db661173")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INT_GPIO" input
+			(at 158.75 96.52 180)
+			(uuid "ad78a805-d927-45da-a027-28a20e2b2352")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MEMORIA" input
+			(at 158.75 91.44 180)
+			(uuid "41e66365-3aad-496d-a322-e21882a54ebe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MISO" input
+			(at 158.75 86.36 180)
+			(uuid "c7876f55-4eb5-4172-9036-54959fea630f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK" input
+			(at 158.75 88.9 180)
+			(uuid "25d59169-604e-4e79-88b7-2ca3a10427fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Schematic"
+				(path "/05016bfd-df52-464c-8b8d-9a207f7afd58"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
