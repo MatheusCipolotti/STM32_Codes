@@ -10,7 +10,7 @@
 - [UART](STM32F030K6T6/EUSART)
 - SPI
     - [Expansão de saídas com o 74HC595](STM32F030K6T6/SPI/Expansão_Saídas)
-    - [Expansão de entradas com o 74HC165]
+    - [Expansão de entradas com o 74HC165](STM32F030K6T6/SPI/Expansão_Entradas)
 - I2C
 - [LCD](STM32F030K6T6/LCD)
 
